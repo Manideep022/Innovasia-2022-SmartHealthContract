@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+    background-image: url('bg2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+      form{
+        text-align: center;
+        margin:auto;
+        margin-top:50px;
+        padding: 20px;
+        border:3px solid black;
+        width:250px;
+      }
+      h1{
+        text-align:center;
+      }
+    </style>
+  </head>
+<body>
+  <h1>Enter Patient Details</h1>
+<form>
+  <label for="fname">Patient Name:</label><br>
+  <input type="text" id="patient_name" name="fname"><br><br>
+  <label for="lname">phone Number:</label><br>
+  <input type="text" id="phone_number" name="lname"><br><br>
+  <label for="lname">Scheme Number:</label><br>
+  <input type="text" id="scheme_number" name="lname"><br><br>
+  <label for="lname">Address:</label><br>
+  <input type="text" id="add" name="lname"><br><br>
+  <label for="lname">Gender:</label><br>
+  <input type="text" id="gen" name="lname"><br><br>
+  <label for="lname">Blood Group:</label><br>
+  <input type="text" id="bg" name="lname"><br><br>
+  <label for="lname">Long Term Diseases:</label><br>
+  <input type="text" id="ltd" name="lname"><br><br>
+  <button style="background-color:rgb(0, 255, 251)"onclick = "paa()">Create account</button>
+
+</form>
+<script>
+  function paa(){
+    let name = document.getElementById('patient_name').value;
+    let phno = document.getElementById('phone_number').value;
+    let sch= document.getElementById('scheme_number').value;
+    let addres = document.getElementById('add').value;
+    let gend = document.getElementById('gen').value;
+    let blod = document.getElementById('bg').value;
+    let ltd = document.getElementById('ltd').value;
+    alert("the account has been created with these credentials:\nname:"+name+"\nphone number:"+phno+"\nscheme number:"+sch+"\nadress:"+addres+"\ngender:"+gend+"\nblood group:"+blod+"\nLong Term dieases:"+ltd);
+  }
+</script>
+</body>
+</html>
